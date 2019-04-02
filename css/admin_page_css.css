@@ -1,0 +1,71 @@
+.hide-field{
+    display: none;
+}
+.field-40{
+    width: 40%!important;
+}
+.onoffswitch {
+    position: relative; width: 133px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none!important;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #D4D4D4; border-radius: 14px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 18px; padding: 0; line-height: 18px;
+    font-size: 11px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 47px;
+    background-color: #F1F1F1; color: #26C21B;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 47px;
+    background-color: #F1F1F1; color: #BA1717;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 21px; margin: -1.5px;
+    background: #BA1717;
+    position: absolute; top: 0; bottom: 0;
+    right: 111px;
+    border: 2px solid #D4D4D4; border-radius: 14px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #26C21B; 
+}
+.mw_d_title{
+    font-weight: bold;
+    font-size: 24px!important;
+}
+.hint{
+    font-style: italic;
+    font-size: 12px;
+}
+.postcode-list-container{
+    border: 1px dashed #777777;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.postcode-list-input{
+    width: 100%;
+}
+.delete-list {
+    float: right;
+}

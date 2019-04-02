@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.postcode_check_form .hide-msg{
+    display: none;
+}
+.postcode_check_form {
+    position: relative;
+}
+.postcode_check_form .pc-submit {
+    bottom: 3px;
+    padding: 0.5em 1em;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    height: 41px;
+}
+.mgreen{
+    color: #34b248;
+}
+.mred{
+    color: #b23434;
+}
+.mblue{
+    color: #3470b2;
+}
+.myellow{
+    color: #b2b134;
+}
+.mpurple{
+    color: #9b34b2;
+}
+.alt-success{
+    color: #fff;
+}
+.alt-errors{
+    color: #000;
+}
+.w100{
+    width:100%;
+}
+li.postcode_li {
+    list-style:none;
+    padding: 5px;
+}
+.ds-inline{
+   display: inline-block; 
+}
+li.postcode_li::before {
+    content: " \002022  ";
+    color: #000;
+    font-size: 24px;
+    white-space: pre;
+}
+li.postcode_li::after {
+  content: " ";
+  white-space: pre;
+}
+.bgreen::before {
+    color: #47c147!important;
+}
+.bblue::before {
+    color: #4753c0!important;
+}
+.bred::before {
+    color: #c04747!important;
+}
+.byellow::before {
+    color: #b6c047!important;
+}
+.bpurple::before {
+    color: #aa47c0!important;
+}
+.bbw{
+    background: #000!important;
+    color:#FFF;
+}
+.bwb{
+    background: #FFF!important;
+    color:#000;
+}
+li.postcode_alt_li {
+    padding: 5px;
+}
+li.postcode_alt_li::before {
+    content: " \002022  ";
+    color: #59f759;
+    font-size: 24px;
+    white-space: pre;
+}
+li.postcode_alt_li::after {
+  content: " ";
+  white-space: pre;
+}
