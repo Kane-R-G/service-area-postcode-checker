@@ -1,6 +1,4 @@
 <?php
-
-
 /*
 Plugin Name: Service Area Postcode Checker
 Plugin URI: http://wordpress.plustime.com.au/service-area-postcode-checker/
