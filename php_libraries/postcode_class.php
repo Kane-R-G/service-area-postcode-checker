@@ -14,7 +14,7 @@ class Postcodes {
         
         $check = $this->checkPostcode();
         if( ! is_array( $check ) || empty( $check ) ){
-            return array( 'Result' => false, 'Error' => __( 'Postcode Not Found', 'sapc-domain' ) );    
+            return array( 'Result' => false, 'Error' => __( '', 'sapc-domain' ) );    
         }
         
         $check = array_values( $check );
@@ -105,7 +105,7 @@ class Postcodes {
     
     function checkPostcodeArray( $postcode ){
         $details = $this->returnPostcodeDetails( $postcode );
-        return ( fnmatch( $details['Postcode'] , $this->search ) );
+        return ( fnmatch( strtolower( $details['Postcode'] ) , strtolower( $this->search ) ) );
     }
 }
 

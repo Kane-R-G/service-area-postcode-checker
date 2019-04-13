@@ -4,13 +4,23 @@ Plugin Name: Service Area Postcode Checker
 Donate link: http://wordpress.plustime.com.au/donate/
 Tags: postcode checker, business service area checker, postcode search, customer delivery areas, postcode, search
 Requires at least: 4.9.6
-Tested up to: 5.0.3
-Stable tag: 2.0.6
+Tested up to: 5.1.1
+Stable tag: 2.0.7
 Requires PHP: 7.0.10
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Customisable plugin that creates a widget to allows your vistors to check if you service or deliver to their area through a postcode check.
+
+
+== Contribute ==
+
+Want to contribute to the plguin? Check out the github:
+[service-area-postcode-checker](https://github.com/second-2None/service-area-postcode-checker)
+
+== Donate ==
+
+[Please consider donating if this plugin has helped you.](http://wordpress.plustime.com.au/donate/) - Most of our plugins are free, we also proved support for free and all donations, big and small, go towards the development of present and future plugins.
 
 == Description ==
 [](http://coderisk.com/wp/plugin/service-area-postcode-checker/RIPS-VdrS-OwJfv)
@@ -82,13 +92,11 @@ The plugin creates 2 different widgets:
 
 Settings created in the widget overide settings in the option page.
 
-== Donate ==
-
-[Please consider donating if this plugin has helped you.](http://wordpress.plustime.com.au/donate/) - Most of our plugins are free, we also proved support for free and all donations, big and small, go towards the development of present and future plugins.
-
 == Demo & Help ==
 [Service Area Postcode Checker in Action](http://wordpress.plustime.com.au/service-area-postcode-checker/)
     
+
+
 == Installation ==
 
 Installation is simple.
@@ -124,6 +132,12 @@ Plugin will be updated as much as I can.
 
 
 == Changelog ==
+
+= 2.0.7 =
+* Fixed Plugin Header Issue
+* Removed "Postcode Not Foun" in error message
+* Added case insensitive check for postcodes.
+
 
 = 2.0.6 =
 * Added Update Placeholder Text from Options Page, Widget and Shortcode
@@ -199,6 +213,11 @@ Plugin will be updated as much as I can.
 == Upgrade Notice ==
 
 = 2.0.6 =
+= 2.0.7 =
+* Fixed Plugin Header Issue
+* Removed "Postcode Not Foun" in error message
+* Added case insensitive check for postcodes.
+
 * Added Update Placeholder Text from Options Page, Widget and Shortcode
 * Removed PHP Deprecated Create_Function  
 

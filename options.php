@@ -596,7 +596,7 @@ function sapc_ajax_check() {
 
     $lists = get_option( 'sapc_list_settings_options' );
     $get_list = $postcode->returnListFromLabel( $lists['postcodesLists'] , $_POST['list'] );
-    if( $get_list === false ){
+    if( ! $get_list ){
         echo json_encode( array( 'Error' , __( 'Invalid List - Contact Admin', 'sapc-domain' ) ) , JSON_FORCE_OBJECT );
         die();    
     }
