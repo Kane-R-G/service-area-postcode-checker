@@ -32,7 +32,7 @@
         var data = {
             action: 'sapc_ajax_check',
             pc: element.children('.postcode_check_input').val(), 
-            verfiy: element.children('.verify-int').val(),
+            verify: element.children('.verify-int').val(),
             list: ((typeof List_Label !== 'undefined') ? List_Label : '')
         };
         $.post(sapc_CHECKER.ajaxurl, data, function(response) {

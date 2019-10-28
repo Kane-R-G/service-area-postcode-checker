@@ -586,7 +586,7 @@ function sapc_ajax_check() {
         die();
     }
     
-    include( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php');
+    include_once( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php');
     $postcode = new Postcodes();
     
     if( isset( $_POST['verify-int'] ) && $_POST['verify-int'] == 'on' && ! $postcode->isPostcodeInteger( $_POST['pc'] )){
