@@ -5,7 +5,7 @@ Donate link: http://wordpress.plustime.com.au/donate/
 Tags: postcode checker, business service area checker, postcode search, customer delivery areas, postcode, search
 Requires at least: 4.9.6
 Tested up to: 5.1.1
-Stable tag: 2.0.7
+Stable tag: 2.0.8
 Requires PHP: 7.0.10
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -133,6 +133,11 @@ Plugin will be updated as much as I can.
 
 == Changelog ==
 
+= 2.0.8 =
+* Fixed Spelling error in code ( Thanks stefanos82 - GitHub )
+* Fixed PHP include problem causing errors ( Thanks stefanos82 - GitHub )
+
+
 = 2.0.7 =
 * Fixed Plugin Header Issue
 * Removed "Postcode Not Foun" in error message
@@ -212,7 +217,10 @@ Plugin will be updated as much as I can.
 
 == Upgrade Notice ==
 
-= 2.0.6 =
+= 2.0.8 =
+* Fixed Spelling error in code ( Thanks stefanos82 - GitHub )
+* Fixed PHP include problem causing errors ( Thanks stefanos82 - GitHub )
+
 = 2.0.7 =
 * Fixed Plugin Header Issue
 * Removed "Postcode Not Foun" in error message

@@ -3,7 +3,7 @@
 Plugin Name: Service Area Postcode Checker
 Plugin URI: http://wordpress.plustime.com.au/service-area-postcode-checker/
 Description: Customizable plugin that creates an input box to allow your vistors to check if you service or deliver to their area through a postcode check.
-Version: 2.0.7
+Version: 2.0.8
 Text Domain: sapc-domain
 Author: second2none
 Author URI: http://wordpress.plustime.com.au/
@@ -46,16 +46,16 @@ function sapc_create_menu() {
 function sapc_admin_scripts( $args ){
     $current_screen = get_current_screen();
     if( strpos( $current_screen->base , 'sapc_options' ) !== false ) {
-        wp_enqueue_style( 'sapc_admin_css' , plugins_url( 'css/admin_page_css.css' , __FILE__ ) , false , '2.0.7' , 'all' );
-        wp_enqueue_script( 'sapc_admin_js' , plugins_url( 'js/sapc_admin.js' , __FILE__ ) , array( 'jquery') , '2.0.7' , true );
+        wp_enqueue_style( 'sapc_admin_css' , plugins_url( 'css/admin_page_css.css' , __FILE__ ) , false , '2.0.8' , 'all' );
+        wp_enqueue_script( 'sapc_admin_js' , plugins_url( 'js/sapc_admin.js' , __FILE__ ) , array( 'jquery') , '2.0.8' , true );
     }
 } 
 add_action( 'admin_enqueue_scripts' , 'sapc_admin_scripts' );
 
 function sapc_scripts_with_jquery(){
-    wp_enqueue_script( 'postcode-checker' , plugins_url( '/js/my_services_postcode_checker.js' , __FILE__ ) , array( 'jquery' ) , '2.0.7' );
+    wp_enqueue_script( 'postcode-checker' , plugins_url( '/js/my_services_postcode_checker.js' , __FILE__ ) , array( 'jquery' ) , '2.0.8' );
     wp_localize_script( 'postcode-checker' , 'sapc_CHECKER' , array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
-    wp_enqueue_style( 'sapc_css' , plugins_url( '/css/my_services_postcode_checker.css' , __FILE__ ) , false , '2.0.7' , 'all' );
+    wp_enqueue_style( 'sapc_css' , plugins_url( '/css/my_services_postcode_checker.css' , __FILE__ ) , false , '2.0.8' , 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'sapc_scripts_with_jquery' );
 
@@ -117,7 +117,7 @@ function sapc_activate() {
 
     update_option( 'sapc_checker_settings_options' ,            $checker_option ); 
     update_option( 'sapc_checker_settings_submit_options',      $submit_option ); 
-    update_option( 'sapc_version' , '2.0.7' );
+    update_option( 'sapc_version' , '2.0.8' );
 
     
 }
