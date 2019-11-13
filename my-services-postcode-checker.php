@@ -11,7 +11,11 @@ License: GPL2
 */
 
 
-if( ! defined( 'WP_CONTENT_DIR' ) ) {if ( ! defined( 'ABSPATH' ) ) { exit; } }
+if( ! defined( 'WP_CONTENT_DIR' ) ) {
+    if ( ! defined( 'ABSPATH' ) ) {
+        exit;
+    }
+}
 
 include( plugin_dir_path( __FILE__ ) . 'options.php' );
 
@@ -149,7 +153,7 @@ function sapc_checker_shortcode( $atts ) {
         if($checker_settings['checker-ONOFF'] != 'off'){
         	$instance = shortcode_atts( $join_defaults , $atts , 'sapc' );
 
-            include( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php' );
+            include_once( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php' );
             $postcode = new Postcodes();
 
             return '<h2 class="widget-title">' . $instance['title'].'</h2>' . $postcode->printPostcodeInput ( $instance );
@@ -170,7 +174,7 @@ function sapc_display_shortcode( $atts ) {
             //display sitewide is on - run check
             $instance = shortcode_atts( $display_defaults , $atts , 'sapd' );
             
-            include( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php');
+            include_once( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php');
             $postcode = new Postcodes(); 
              
             return '<h2 class="widget-title">' . $instance['title'] . '</h2>' . $postcode->printPostcodeList( $postcode->returnListFromLabel( $lists['postcodesLists'] , $instance['list-display'] ) , $instance['class-display'] , $instance['class-bullet'] );

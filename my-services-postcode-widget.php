@@ -34,7 +34,7 @@ class sapc_Widget extends WP_Widget {
         );
         if( $checker_defaults['checker-ONOFF'] != 'off' ){
             if ( ! class_exists( 'Postcodes' ) ) {
-                include( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php');
+                include_once( plugin_dir_path( __FILE__ ) . 'php_libraries/postcode_class.php');
             }
             $postcode = new Postcodes();
 
